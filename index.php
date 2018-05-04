@@ -115,6 +115,63 @@
     .H6 p img{
       width: 17px;
     }
+    .H7 {
+      background-color: black;
+      margin-top: 4vh;
+      width: 100vw;
+      height: 80vh;
+      display: column;
+
+    }
+    .H7 .title{
+      color: #fe7900;
+      font-size: 24px;
+      font-weight: bold;
+      display: block;
+      margin-top: 5vh;
+      margin-left: 30vw;
+      margin-bottom: 5vh;
+      width: 35vw;
+      position: relative;
+      border-bottom: 3px dashed #fe7900;
+      padding-bottom: 5px;
+      text-align: center;
+    }
+    .flow-img{
+      display: inline-block;
+      width: 100vw;
+      height: 40vh;
+      overflow: hidden;
+      position: relative;
+      float: left;
+
+    }
+    .H7 img{
+      margin: 0;
+      height: 40vh;
+      width: 15vw;
+      text-align:left;
+      position: relative;
+    }
+    .H7 .btn{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      width: 100vw;
+      height: 20vh;
+    }
+    .H7 button{
+      border-radius:2vw;
+      background-color: white;
+      width: 10vw;
+      height: 6vh;
+      justify-content: center;
+      margin: 10vw;
+      font-weight: bold;
+     
+
+    }
     
 
 
@@ -248,7 +305,27 @@
       </div>
       </div>
     	
-  			
+  		<div class="H7">
+        <div class="title">TOP MOVIES IN THEATRES</div>
+        <div class="flow-img">
+          <img src="star wars-poster.jpg">
+          <img src="ready player one poster.jpg">
+          <img src="star wars-poster.jpg">
+          <img src="ready player one poster.jpg">
+          <img src="star wars-poster.jpg">
+          <img src="ready player one poster.jpg">
+          <img src="star wars-poster.jpg">
+          <img src="ready player one poster.jpg">
+          <img src="star wars-poster.jpg">
+          <img src="ready player one poster.jpg">
+        </div>
+        <div class="btn">
+          <button id="P">Previous</button>
+          <button id="A">After</button>
+        </div>
+      
+
+      </div>
   		
 	</div>
 
