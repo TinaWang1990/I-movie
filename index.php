@@ -66,7 +66,7 @@
     	margin-left: 5vw;
     	font-size: 20px;
       font-weight: bold;
-    	width: 100vw;
+    	width: 80vw;
     	height: 7vh;
     	line-height: 7vh;
     }
@@ -180,7 +180,7 @@
   </head>
   <body>
     <div class="d-flex flex-column">
-  		<div class="bg-dark container " style="margin: 0; width: 100vw; height: 7vh">
+  		<div class="bg-dark container-fuild p-0" style="margin: 0; width: 100vw; height: 7vh">
   			
   			<div class="row bg-dark text-white text-center" style="margin: 0; width: 100vw; height: 7vh; line-height: 7vh" >
 
@@ -196,7 +196,8 @@
   		</div>
 
 
-  		<div class="H1">
+  		<div class="H1 container-fuild p-0">
+        <div class="row">
   			<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
  			 <div class="carousel-inner">
    			 <div class="carousel-item active">
@@ -216,6 +217,7 @@
     				<button class="btn btn-outline-success my-1 my-sm-0 bg-white" type="submit" style="height: 5vh;"><img src="./search.PNG"></button>
  					 </form>
   				</div>
+          </div>
       </div>
 
 <!--   			<div class="H2 container m-0" style="padding:0; " >
