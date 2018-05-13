@@ -8,178 +8,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
-
+     <link rel="stylesheet" type="text/css" href="/project/js.css">
 
 
     <title>Hello, world!</title>
     <style type="text/css">
-    	.H1{
-    		color: white;
-    		font-weight: bold;
-    	}
-    	.H1 .login{
-    		margin-right: 10px;
-    	}
-      .P2{
-        background-image: url(./moun.PNG);
-        background-size: cover;
-        height: 35vh;
-
-      }
-    	.search-container {
-    		height: 30vh;
-        display: table;
-        width: 100%
-    	}
-      .search-content{
-        display: table-cell;
-        vertical-align: middle;
-        text-align: center;
-        width: 50vw;
-        margin-left: 25vw;
-      }
-      .form-inline{
-        margin-left: 25vw;
-
-      }
-
-    	.H3 .row{
-    		margin-left: 3vw;
-    		font-size: 1.5rem;
-      	font-weight: bold;
-      	width: 90vw;
-    		height: 7vh;
-    		line-height: 7vh;
-        color:  #fe7900;
-   		 }
-    	.H3 p{
-			margin: 0 5px;
-    	}
-    .H4 .row{
-      margin: 0;
-    }
-   	.H4 .card{
-      text-align: center;
-      margin-top: 2vh;
-	}
-    .H4 i p{
-    	width: 0.1vw;
-    }
-    .H5 .row{
-      margin: 0;
-    }
-   	.H5 .card{
-      text-align: center;
-      margin-top: 2vh;
-	}
-    .H5 i p{
-    	width: 0.1vw;
-    }
-    .H6 .row{
-      margin: 0;
-    }
-   	.H6 .card{
-      text-align: center;
-      margin-top: 2vh;
-	}
-    .H6 i p{
-    	width: 0.1vw;
-    }
-    .H7 {
-      background-color: black;
-      margin-top: 4vh;
-      /*height: 80vh;*/
-    }
-    .H7 .title{
-      color: #fe7900;
-      font-size: 24px;
-      font-weight: bold;
-      display: block;
-      padding-top: 5vh;
-      margin-left: 30vw;
-      margin-bottom: 5vh;
-      width: 35vw;
-      position: relative;
-      border-bottom: 3px dashed #fe7900;
-      padding-bottom: 5px;
-      text-align: center;
-    }
-    .flow-img{
-      display: inline-block;
-      height: 40vh;
-      overflow: hidden;
-      position: relative;
-      float: left;
-
-    }
-    .H7 img{
-      margin: 0;
-      height: 40vh;
-      width: 15vw;
-      text-align:left;
-      position: relative;
-    }
-    .H7 .row{
-      align-items: center;
-      width: 90vw;
-    }
-    .H7 .btn{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .H7 i{
-    	font-size: 24px;
-     	color:  #fe7900;
-    	justify-content: center
-    }
-    .H7 p{
-      margin-left: 100px;
-      margin-right: 100px;
-      margin-top: 35px;    	
-    }
-    .H8 #title{
-      color: black;
-      font-size: 24px;
-      font-weight: bold;
-      margin-top: 10vh;
-      margin-left: 10vw;
-      border-bottom: 5px solid  #fe7900;
-    }
-    .H8 .row{
-      margin: auto;
-      padding: 0;
-      /*height: 100vh;*/
-    }
-    .H9 {
-      background-image: url(./footer-bg.PNG);
-      background-position: center center;
-      background-size: cover;
-      height: 70vh;
-      margin-top: 3vh;
-      color: #fe7900;
-      position: relative;
-    }
-    .H9 .row{
-      position: absolute;
-      margin-top: 25vh;
-      width: 80vw;
-      margin-left: 10vw;
-    }
-    .H10{
-     background-image: url(./footer-bg.PNG);
-     height: 7vh;
-     color: grey;
-     line-height: 7vh;
-     /*text-align: right;*/
-     /*vertical-align: center;*/
-    }
-    .H10 p{
-      vertical-align: center;
-      margin-right: 2vw;
-      padding: 0;
-      
-    }
+    
     </style>
   </head>
   <body>
@@ -189,7 +23,6 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
        </button>
-  <!-- <div style="width: 50vw"></div> -->
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
          <ul class="navbar-nav">
       <li class="nav-item active">
@@ -210,14 +43,14 @@
           <a class="dropdown-item" href="#">Love</a>
           <a class="dropdown-item" href="#">Comedy</a>
         </div>
-      </li>
-     </ul>
+       </li>
+      </ul>
      
-  </div>
-  <div class="login">
-        <i class="fas fa-user fa-2x"></i>
       </div>
-</nav>
+      <div class="login">
+        <i class="fas fa-user"></i>
+      </div>
+      </nav>
     </div>
 
     <div class="H2 container-fluid p-0">

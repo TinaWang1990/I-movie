@@ -1,0 +1,215 @@
+.H1{
+    		color: white;
+    		font-weight: bold;
+    	}
+    	.H1 .login{
+    		margin-right: 10px;
+    	}
+      .P2{
+        background-image: url(./moun.PNG);
+        background-size: cover;
+        height: 35vh;
+
+      }
+    	.search-container {
+    		height: 30vh;
+        display: table;
+        width: 100%
+    	}
+      .search-content{
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        width: 50vw;
+        margin-left: 25vw;
+      }
+      .form-inline{
+        margin-left: 25vw;
+
+      }
+
+    	.H3 .row{
+    		margin-left: 3vw;
+    		font-size: 1.5rem;
+      	font-weight: bold;
+      	width: 90vw;
+    		height: 7vh;
+    		line-height: 7vh;
+        color:  #fe7900;
+   		 }
+    	.H3 p{
+			margin: 0 5px;
+    	}
+    .H4 .row{
+      margin: 0;
+    }
+   	.H4 .card{
+      text-align: center;
+      margin-top: 2vh;
+	}
+    .H4 i p{
+    	width: 0.1vw;
+    }
+    .H5 .row{
+      margin: 0;
+    }
+   	.H5 .card{
+      text-align: center;
+      margin-top: 2vh;
+	}
+    .H5 i p{
+    	width: 0.1vw;
+    }
+    .H6 .row{
+      margin: 0;
+    }
+   	.H6 .card{
+      text-align: center;
+      margin-top: 2vh;
+	}
+    .H6 i p{
+    	width: 0.1vw;
+    }
+    .H7 {
+      background-color: black;
+      margin-top: 4vh;
+      /*height: 80vh;*/
+    }
+    .H7 .title{
+      color: #fe7900;
+      font-size: 24px;
+      font-weight: bold;
+      display: block;
+      padding-top: 5vh;
+      margin-left: 30vw;
+      margin-bottom: 5vh;
+      width: 35vw;
+      position: relative;
+      border-bottom: 3px dashed #fe7900;
+      padding-bottom: 5px;
+      text-align: center;
+    }
+    .flow-img{
+      display: inline-block;
+      height: 40vh;
+      overflow: hidden;
+      position: relative;
+      float: left;
+
+    }
+    .H7 img{
+      margin: 0;
+      height: 40vh;
+      width: 15vw;
+      text-align:left;
+      position: relative;
+    }
+    .H7 .row{
+      align-items: center;
+      width: 90vw;
+    }
+    .H7 .btn{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .H7 i{
+    	font-size: 24px;
+     	color:  #fe7900;
+    	justify-content: center
+    }
+    .H7 p{
+      margin-left: 100px;
+      margin-right: 100px;
+      margin-top: 35px;    	
+    }
+    .H8 #title{
+      color: black;
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 10vh;
+      margin-left: 10vw;
+      border-bottom: 5px solid  #fe7900;
+    }
+    .H8 .row{
+      margin: auto;
+      padding: 0;
+      /*height: 100vh;*/
+    }
+    .H9 {
+      background-image: url(./footer-bg.PNG);
+      background-position: center center;
+      background-size: cover;
+      height: 70vh;
+      margin-top: 3vh;
+      color: #fe7900;
+      position: relative;
+    }
+    .H9 .row{
+      position: absolute;
+      margin-top: 25vh;
+      width: 80vw;
+      margin-left: 10vw;
+    }
+    .H10{
+     background-image: url(./footer-bg.PNG);
+     height: 7vh;
+     color: grey;
+     line-height: 7vh;
+     /*text-align: right;*/
+     /*vertical-align: center;*/
+    }
+    .H10 p{
+      vertical-align: center;
+      margin-right: 2vw;
+      padding: 0;
+      
+    }
+    .B-H1{
+      background-image: url("./background.jpg");
+      background-size: cover;
+      background-position: center center;
+      height: 80vh;
+      position: relative;
+    }
+    .B-H2{
+      position: absolute;
+      top:60vh;
+      /*left: 1vw;*/
+    }
+    .B-H2 .card-body{
+      color: black;
+    }
+    .B-H2 .card-body p{
+      font-size: 14px;
+     
+    }
+    .B-H2 span{
+     font-weight: 600;
+     font-size: 20px;
+     color: black;
+    }
+    .B-H2 .col-5{
+      padding-left: 5vw;
+      padding-right: 5vw;
+    }
+    .B-H2 .col-7{
+      margin-top: 10vh;
+
+    }
+    .rating-star{
+      margin-top: 1vh;
+    }
+    .B-H3 .col-7{
+      padding-right: 5vw;
+      padding-top: 2vh;
+      font-size: 1.5vw;
+    }
+    /*.B-H4 .row{
+      border-bottom: 1px solid #bbb;
+    }
+    .B-H4 .col-2{
+      border-bottom: 2px solid #fe7900;
+      color: #fe7900;
+      line-height: 2rem;
+    }*/
