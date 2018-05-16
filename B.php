@@ -74,7 +74,7 @@
  	 	<div class="col-7">
  	 		 <div class="movie-story text-dark">
  	 			<h1><i class="fas fa-book"></i>  Movie Story</h1>
- 	 			<p class="text-justify font-weight-light">In the year 2045, the real world is a harsh place. The only time Wade Watts (Tye Sheridan) truly feels alive is when he escapes to the OASIS, an immersive virtual universe where most of humanity spends their days. In the OASIS, you can go anywhere, do anything, be anyone-the only limits are your own imagination. The OASIS was created by the brilliant and eccentric James Halliday (Mark Rylance), who left his immense fortune and total control of the Oasis to the winner of a three-part contest he designed to find a worthy heir. When Wade conquers the first challenge of the reality-bending treasure hunt, he and his friends-aka the High Five-are hurled into a fantastical universe of discovery and danger to save the OASIS.</p>
+ 	 			<p class="text-justify font-weight-light" style="font-size: 18px">In the year 2045, the real world is a harsh place. The only time Wade Watts (Tye Sheridan) truly feels alive is when he escapes to the OASIS, an immersive virtual universe where most of humanity spends their days. In the OASIS, you can go anywhere, do anything, be anyone-the only limits are your own imagination. The OASIS was created by the brilliant and eccentric James Halliday (Mark Rylance), who left his immense fortune and total control of the Oasis to the winner of a three-part contest he designed to find a worthy heir. When Wade conquers the first challenge of the reality-bending treasure hunt, he and his friends-aka the High Five-are hurled into a fantastical universe of discovery and danger to save the OASIS.</p>
  	 		</div>
  	 		<div class="trailor text-dark">
  	 			<h1><i class="fas fa-camera-retro"></i>  Trailers & Videos</h1>
@@ -85,7 +85,7 @@
  	 </div>
  	 <div class="B-H4 container-fluid px-5 pt-5">
  	 	<div class="row" style="border-bottom: 1px solid #bbb;">
- 	 		<div class="col-3" style="font-size:20px; border-bottom: 2px solid #fe7900;color: #fe7900;line-height: 2rem;">
+ 	 		<div class="col-2" style="font-size:20px; border-bottom: 2px solid #fe7900;color: #fe7900;line-height: 2rem; justify-content: center;">
  	 			<i class="fas fa-comments fa-2x"></i>  COMMENT
  	 		</div>
  	 	</div>
@@ -97,7 +97,9 @@
    				</div>
     		</form>
  	 	</div>
- 	 	<div class="B-H5 container-fluid">
+ 	 </div>
+ 	 
+ 	 <div class="B-H5 container-fluid">
  	 		<div class="row">
  	 			<div class="col-1 text-warning text-center">
  	 				<div class="mx-3">
@@ -130,10 +132,11 @@
  	 				<p class="text-justify font-weight-light">Ready Player One, for people who’ve evaded the existential panic attack it’s caused throughout film and nerd Twitter, tells the story of people who escape a pseudo-dystopian, not-so-distant-future Earth through a virtual reality universe in which anything is possible. In the book, the space, called Oasis, is dominated by nerd culture touchstones from author Ernie Cline’s childhood, but the movie is more expansive, looping in nostalgia for cartoons, movies and video games as recent as this decade. Fitting. In the age of memes and binge streaming, culture moves fast enough that it’s perfectly reasonable to feel nostalgic for Vine or the vanilla release of Destiny. This is to say, the movie (co-written by Cline) has been changed in ways that, consciously or not, make Cline’s work more accessible.</p>
  	 			</div>
  	 		</div>
- 	 	</div>
- 	 	
- 	 	
  	 </div>
+
+ 	 	
+ 	 	
+ 	 
     
 
     

@@ -11,7 +11,7 @@
      <link rel="stylesheet" type="text/css" href="/project/js.css">
 
 
-    <title>Hello, world!</title>
+    <title>Movie SCS</title>
     <style type="text/css">
     
     </style>
@@ -45,20 +45,23 @@
         </div>
        </li>
       </ul>
+      <div class="form-inline my-2 my-lg-0 ml-auto">
+        <div class="nav-link">
+            <i class="fas fa-user"></i>
+            </div>
+      </div>
+      </div>
      
-      </div>
-      <div class="login">
-        <i class="fas fa-user"></i>
-      </div>
       </nav>
     </div>
 
-    <div class="H2 container-fluid p-0">
+    <div class="H2 container-fluid p-0" style="height: 75vh;
+        overflow: hidden;">
     	<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
  			 <div class="carousel-inner">
    			 <div class="carousel-item active">
    			 	<div style="position: relative;">
-      			<img class="d-block w-100 h-30" src="./ready background.jpg" alt="First slide">
+      			<a href="./B.php"><img class="d-block w-100 h-30" src="./ready background.jpg" alt="First slide"></a>
       			</div>
       			<div>
       				
@@ -88,8 +91,8 @@
     <div class="search-container">
 				<div class="search-content">
   				<form class="form-inline">
-   					<input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search" style="width: 40vw;height: 8vh;">
-    				<button class="btn btn-outline-success my-1 my-sm-0 bg-white" type="submit" style="height: 8vh;"> <i class="fas fa-search"></i></button>
+   					<input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search" style="width: 40vw;height: 5vh; border: 1px solid black;">
+    				<button class="btn btn-outline-dark my-1 my-sm-0 bg-white" type="submit" style="height: 5vh;"> <i class="fas fa-search"></i></button>
  				</form>
  			</div>
   	</div>

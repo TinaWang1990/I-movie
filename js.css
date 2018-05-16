@@ -1,18 +1,20 @@
-.H1{
+      .H1{
     		color: white;
     		font-weight: bold;
     	}
     	.H1 .login{
     		margin-right: 10px;
     	}
-      .P2{
-        background-image: url(./moun.PNG);
-        background-size: cover;
-        height: 35vh;
-
+      .H2{
+        height: 75vh;
+        overflow: hidden;
       }
-    	.search-container {
-    		height: 30vh;
+      .H2 img{
+        height: 70vh;
+      }
+   
+      .S search-container{
+    		height: 15vh;
         display: table;
         width: 100%
     	}
@@ -25,7 +27,9 @@
       }
       .form-inline{
         margin-left: 25vw;
-
+      }
+      .S button{
+        background-color: #fe7900;
       }
 
     	.H3 .row{
@@ -181,13 +185,13 @@
       color: black;
     }
     .B-H2 .card-body p{
-      font-size: 14px;
+      font-size: 20px;
      
     }
     .B-H2 span{
      font-weight: 600;
-     font-size: 20px;
-     color: black;
+     font-size: 25px;
+     color: white;
     }
     .B-H2 .col-5{
       padding-left: 5vw;
@@ -203,7 +207,9 @@
     .B-H3 .col-7{
       padding-right: 5vw;
       padding-top: 2vh;
-      font-size: 1.5vw;
+    }
+    .B-H3 .col-7 p {
+      font-size: 20px;
     }
     /*.B-H4 .row{
       border-bottom: 1px solid #bbb;
