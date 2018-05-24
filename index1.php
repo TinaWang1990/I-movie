@@ -61,7 +61,7 @@
  			 <div class="carousel-inner">
    			 <div class="carousel-item active">
    			 	<div style="position: relative;">
-      			<a href="./B.php"><img class="d-block w-100 h-30" src="./ready background.jpg" alt="First slide"></a>
+      			<a href="./B.php"><img class="d-block w-100 h-30" src="./img/ready background.jpg" alt="First slide"></a>
       			</div>
       			<div>
       				
@@ -69,7 +69,7 @@
     		</div>
     		<div class="carousel-item">
     			<div style="position: relative;">
-     		 	<img class="d-block w-100 h-30" src="./maze runner-back.jpg" alt="Second slide">
+     		 	<img class="d-block w-100 h-30" src="./img/maze runner-back.jpg" alt="Second slide">
      		 	</div>
       			<div>
       				
@@ -77,7 +77,7 @@
     		</div>
     		<div class="carousel-item">
     			<div style="position: relative;">
-     			<img class="d-block w-100 h-30" src="./rampage-back.jpg" alt="Third slide">
+     			<img class="d-block w-100 h-30" src="./img/rampage-back.jpg" alt="Third slide">
      			</div>
       			<div>
       				
@@ -88,7 +88,7 @@
     </div>
 
     <div class="P2">
-    <div class="search-container">
+    <div class="H1-1 search-container">
 				<div class="search-content">
   				<form class="form-inline">
    					<input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search" style="width: 40vw;height: 5vh; border: 1px solid black;">

@@ -27,7 +27,7 @@
           <a class="dropdown-item" href="#">Comments</a>
         </div>
     
-    	 <a class="navbar-brand" href="#">  I-Movie</a>
+    	 <a class="navbar-brand" href="#">Movie-SCS</a>
     	 <form class="form-inline">
    		 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
     		<button class="btn btn-outline-light my-2 my-sm-0" type="submit"> <i class="fas fa-search"></i></button>
@@ -36,16 +36,19 @@
        		 <i class="fas fa-user"></i>
       		</div>
  	 </nav>
-
- 	 <div class="B-H1 container-fluid p-0">
+<!-- 
+ 	 <div class="B-H1 container-fluid p-0" style="background-image: url(./project/img/ready background.jpg);">
  	 	
- 	 </div>
+ 	 </div> -->
+   <div class="B-H1 container-fluid p-0" style="background-image: url(./img/ready background.jpg);">
+     
+   </div>
 
  	 <div class="B-H2 container-fluid p-0">
  	 	<div class="row m-0 p-0">
  	 		<div class="col-5">
  	 			<div class="card" >
- 			 <img class="card-img-top" src="./ready player one poster.jpg" alt="Card image cap">
+ 			 <img class="card-img-top" src="./img/ready player one poster.jpg" alt="Card image cap">
  			 <div class="card-body">
    			 	<h3>Movie Info</h3>
    			 		<div class="director font-weight-light"><span>Director: </span>Steven Spielberg</div>

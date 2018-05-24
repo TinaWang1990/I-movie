@@ -55,7 +55,8 @@
       </nav>
     </div>
     
-    <div class="S search-container" style="height: 15vh">
+    <div class="H1-1 search-container justify-content-center" style="height: 10vh;
+        display: table;width: 100%; background-color: #eee;">
         <div class="search-content">
           <form class="form-inline">
             <input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search" style="width: 40vw;height: 5vh; border: 1px solid black;">
@@ -69,16 +70,26 @@
     	<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
  			 <div class="carousel-inner">
    			 <div class="carousel-item active">
-   			 	<div style="position: relative;">
-      			<a href="./B.php"><img class="d-block w-100 h-70" src="./ready background.jpg" alt="First slide"></a>
+   			 	<div class="position-relative">
+      			<a href=""><img class="d-block w-100 h-30" src="/project/img/ready background.jpg" alt="First slide"></a>
       			</div>
-      			<div>
-      				
+      			<div class="position-absolute" style="left: 2rem;bottom: 2rem">
+      				<h2 class="text-white">Movie Name</h2>
+              <p class="text-light mb-4"><span>Genre</span>|<span>Duration 125minutes</span></p>
+              <a href="./B.php" class="btn text-white" style="background-color: #fd7e14;">View Info</a>
+
       			</div>
+            <div class="position-absolute border border-secondary p-2 rounded" style="right: 2rem;bottom: 2rem">
+              <p >
+                <span class="text-white" style="font-size: 2rem">Rating</span>
+                <span class="text-gray-dark ml-2" style="font-size: 1.2rem">based on 2000 views</span>
+              </p>
+              <h5>Score: 3.4</h5>
+            </div>
     		</div>
-    		<div class="carousel-item">
+    		<!-- <div class="carousel-item">
     			<div style="position: relative;">
-     		 	<img class="d-block w-100 h-70" src="./maze runner-back.jpg" alt="Second slide">
+     		 	<img class="d-block w-100 h-30" src="./img/maze runner-back.jpg" alt="Second slide">
      		 	</div>
       			<div>
       				
@@ -86,12 +97,12 @@
     		</div>
     		<div class="carousel-item">
     			<div style="position: relative;">
-     			<img class="d-block w-100 h-70" src="./rampage-back.jpg" alt="Third slide">
+     			<img class="d-block w-100 h-30" src="./img/rampage-back.jpg" alt="Third slide">
      			</div>
       			<div>
       				
       			</div>
-    		</div>
+    		</div> -->
   			</div>
 			</div>			  	
     </div>
@@ -114,34 +125,18 @@
         {% for movie in movies %}
         <div class="col-4 col-md-3 my-2">
             <div class="card" >
-            <img class="card-img-top" src="./img/{{ movie.poster_url }}" alt="Card image cap">
+            <a href="/project/movie/get/{{movie.id}}">
+            <img class="card-img-top" src="/project/img/{{ movie.poster_url }}" alt="Card image cap"></a>
              <div class="card-body">
               <div class="theme-pink-color float-right border border-danger rounded p-1 bg-light">
                 {{(movie.total_score/movie.total_num) | number_format(1, '.','.')}}
               </div>
               <h5 class="card-title" style="min-height: 3rem;">{{movie.name}}</h5>
-               <p class="card-text"><i class="fas fa-clock"></i> {{movie.runtime}} minites</p>
+               <p class="card-text"><i class="fas fa-clock"></i> {{movie.runtime}} minutes</p>
              </div>
             </div>          
           </div>
         {% endfor %}
-
-
-  			  <!-- <?php
-          for ($i=1; $i < 9; $i++) { 
-          ?>
-            <div class="col-3">
-            <div class="card" >
-            <img class="card-img-top" src="./star wars-poster.jpg" alt="Card image cap">
-             <div class="card-body">
-              <h5 class="card-title">Star Wars</h5>
-               <p class="card-text"><i class="fas fa-clock fa-2x"></i>  02 hours 50 minites</p>
-             </div>
-            </div>          
-          </div>
-          <?php          
-          }
-          ?>  -->
   		</div>
   	</div>
 
@@ -152,7 +147,7 @@
           ?>
             <div class="col-3">
             <div class="card" >
-            <img class="card-img-top" src="./star wars-poster.jpg" alt="Card image cap">
+            <img class="card-img-top" src="./project/img/star wars-poster.jpg" alt="Card image cap">
              <div class="card-body">
               <h5 class="card-title">Star Wars</h5>
                <p class="card-text"><i class="fas fa-clock fa-2x"></i>  02 hours 50 minites</p>
@@ -189,16 +184,16 @@
     <div class="H7 container-fluid p-0">
     	<div class="title">TOP MOVIES IN THEATRES</div>
         <div class="flow-img">
-          <img src="star wars-poster.jpg">
-          <img src="ready player one poster.jpg">
-          <img src="star wars-poster.jpg">
-          <img src="ready player one poster.jpg">
-          <img src="star wars-poster.jpg">
-          <img src="ready player one poster.jpg">
-          <img src="star wars-poster.jpg">
-          <img src="ready player one poster.jpg">
-          <img src="star wars-poster.jpg">
-          <img src="ready player one poster.jpg">
+          <img src="/project/img/star wars-poster.jpg">
+          <img src="/project/img/ready player one poster.jpg">
+          <img src="/project/img/star wars-poster.jpg">
+          <img src="/project/img/ready player one poster.jpg">
+          <img src="/project/img/star wars-poster.jpg">
+          <img src="/project/img/ready player one poster.jpg">
+          <img src="/project/img/star wars-poster.jpg">
+          <img src="/project/img/ready player one poster.jpg">
+          <img src="/project/img/star wars-poster.jpg">
+          <img src="/project/img/ready player one poster.jpg">
         </div>
         <div class="btn container-fluid p-0">
          <p id="P"><i class="fas fa-angle-double-left"></i></p>
@@ -213,7 +208,7 @@
     	<div class="row">
        <div class="col-3 pl-5 mt-3" style="margin: auto;">
          <div class="card" style="">
-          <img class="card-img-top" src="./passengers-poster.jpg" alt="Card image cap">
+          <img class="card-img-top" src="./img/passengers-poster.jpg" alt="Card image cap">
           <div class="card-body">
           <h5 class="card-title">Passengers</h5>
             <p class="card-text">Marks</p>
@@ -221,7 +216,7 @@
           </div>
         </div>
         <div class="card" style="">
-          <img class="card-img-top" src="./headline-poster.jpg" alt="Card image cap">
+          <img class="card-img-top" src="./img/headline-poster.jpg" alt="Card image cap">
           <div class="card-body">
           <h5 class="card-title">Card title</h5>
             <p class="card-text">Marks</p>
@@ -231,7 +226,7 @@
        </div>
        <div class="col-5 mt-3">
          <div class="card" style="">
-          <img class="card-img-top" src="./ready player one poster.jpg" alt="Card image cap">
+          <img class="card-img-top" src="./img/ready player one poster.jpg" alt="Card image cap">
           <div class="card-body">
           <h5 class="card-title">Card title</h5>
             <p class="card-text">Marks</p>
@@ -241,7 +236,7 @@
        </div> 
        <div class="col-3 pr-5 mt-3">
          <div class="card" style="">
-          <img class="card-img-top" src="./headline-poster.jpg" alt="Card image cap">
+          <img class="card-img-top" src="./img/headline-poster.jpg" alt="Card image cap">
           <div class="card-body">
           <h5 class="card-title">Card title</h5>
             <p class="card-text">Marks</p>
@@ -249,7 +244,7 @@
           </div>
         </div>
         <div class="card" style="">
-          <img class="card-img-top" src="./passengers-poster.jpg" alt="Card image cap">
+          <img class="card-img-top" src="./img/passengers-poster.jpg" alt="Card image cap">
           <div class="card-body">
           <h5 class="card-title">Card title</h5>
             <p class="card-text">Marks</p>
@@ -264,11 +259,11 @@
       <div class="row">
         <div class="col-6" style="text-align: center;">
           <h1 style=" font-size: 5vw;">
-            I-Movie
+            Movie SCS
           </h1>
-          <h4 style=" font-size: 3vw;">
-            Cinema In Your Eyes
-          </h4>
+          <h2 style=" font-size: 3vw;">
+            Movie Seek Comment Share
+          </h2>
         </div>
 
         <div class="col-1"></div>
@@ -281,7 +276,7 @@
       </div>
     </div>
     <div class="H10 container-fluid p-0">
-      <p><i class="fas fa-copyright">copyright 2018 I-Moive</i></p>
+      <p><i class="fas fa-copyright">copyright 2018 Moive SCS</i></p>
     </div>
 
     <!-- Optional JavaScript -->
