@@ -1,5 +1,4 @@
 <?php 
-
 require_once('./vendor/autoload.php');
 require_once('./database.php');
 
@@ -45,11 +44,21 @@ if(array_key_exists('url', $_GET)){
 
 //main page
 $movies=$db_conn->getAllMovies();
+$categories=$db_conn->getAllCategories();
+
+$new_category=array();
+foreach ($categories as $category) {
+	$new_category += array(
+		$category['id']=>$category['name']
+	);
+}
 
 try{
 	echo $twig->render('index.html.twig', array(
 	'name' => 'Movie SCS',
-	'movies'=> $movies
+	'movies'=> $movies,
+	'categories'=> $new_category,
+	// 'c_id'=>  $cid
 )
 );	
 }catch(Exception $e){

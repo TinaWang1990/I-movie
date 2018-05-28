@@ -39,9 +39,10 @@
           Catorgaries
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Love</a>
-          <a class="dropdown-item" href="#">Comedy</a>
+          {% for id, name in categories %}
+            <a class="dropdown-item" href="/project/genre/get/{{id}}">{{name}}</a>
+          {% endfor %}
+          
         </div>
        </li>
       </ul>
@@ -58,8 +59,8 @@
     <div class="H1-1 search-container justify-content-center" style="height: 10vh;
         display: table;width: 100%; background-color: #eee;">
         <div class="search-content">
-          <form class="form-inline">
-            <input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search" style="width: 40vw;height: 5vh; border: 1px solid black;">
+          <form class="form-inline" action="/project/search/get" method="post">
+            <input class="form-control mr-sm-2 " type="search" placeholder="Search" name="search" aria-label="Search" style="width: 40vw;height: 5vh; border: 1px solid black;">
             <button class="btn btn-outline-dark my-1 my-sm-0 bg-white" type="submit" style="height: 5vh;"> <i class="fas fa-search"></i></button>
         </form>
       </div>
@@ -75,7 +76,15 @@
       			</div>
       			<div class="position-absolute" style="left: 2rem;bottom: 2rem">
       				<h2 class="text-white">Movie Name</h2>
-              <p class="text-light mb-4"><span>Genre</span>|<span>Duration 125minutes</span></p>
+              <p class="text-light mb-4">
+                <span>
+                {% set genres = moives.0.genre | split(',') %}
+                {% set temp = [] %}
+                {% for ge in genres %}
+                  {% set temp = temp | merge([catergories[ge]])%}
+                {% endfor %}
+                {{ temp | join(' |  ')}}
+              </span>|<span>Duration 125minutes</span></p>
               <a href="./B.php" class="btn text-white" style="background-color: #fd7e14;">View Info</a>
 
       			</div>
@@ -118,7 +127,7 @@
         <p class="soon" onclick="soon_movie()">COMING SOON</p>
         </div>
     </div>
-
+ 
 
     <div class="H4 container-fluid p-0">
     	<div class="row ">
@@ -141,43 +150,11 @@
   	</div>
 
     <div class="H5 container-fluid p-0">
-    	<div class="row ">
-  			  <?php
-          for ($i=1; $i < 9; $i++) { 
-          ?>
-            <div class="col-3">
-            <div class="card" >
-            <img class="card-img-top" src="./project/img/star wars-poster.jpg" alt="Card image cap">
-             <div class="card-body">
-              <h5 class="card-title">Star Wars</h5>
-               <p class="card-text"><i class="fas fa-clock fa-2x"></i>  02 hours 50 minites</p>
-             </div>
-            </div>          
-          </div>
-          <?php          
-          }
-          ?> 
-  		</div>
+ 
   	</div>
 
     <div class="H6 container-fluid p-0">
-    	<div class="row ">
-  			  <?php
-          for ($i=1; $i < 9; $i++) { 
-          ?>
-            <div class="col-3">
-            <div class="card" >
-            <img class="card-img-top" src="./star wars-poster.jpg" alt="Card image cap">
-             <div class="card-body">
-              <h5 class="card-title">Star Wars</h5>
-               <p class="card-text"><i class="fas fa-clock fa-2x"></i>  02 hours 50 minites</p>
-             </div>
-            </div>          
-          </div>
-          <?php          
-          }
-          ?> 
-  		</div>
+    	
   	</div>
     
 

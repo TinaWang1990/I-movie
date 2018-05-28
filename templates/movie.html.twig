@@ -28,8 +28,8 @@
         </div>
     
     	 <a class="navbar-brand" href="/project/">Movie-SCS</a>
-    	 <form class="form-inline">
-   		 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    	 <form class="form-inline" action="/project/search/get" method="post">
+       <input class="form-control mr-sm-2" type="search" placeholder="Search" name="search" aria-label="Search">
     		<button class="btn btn-outline-light my-2 my-sm-0" type="submit"> <i class="fas fa-search"></i></button>
  		 </form>
      		<div class="login">
@@ -37,10 +37,7 @@
       		</div>
  	 </nav>
    </div>
-<!-- 
- 	 <div class="B-H1 container-fluid p-0" style=" background-image: url(/project/img/{{movie.bg_url}})">
- 	 	
- 	 </div> -->
+
    <div class="B-H1 container-fluid p-0 position-relative" style="height: 60vh">
      <img src="/project/img/{{movie.bg_url}}" style="width: 100%; height: 60vh">
    </div>
@@ -89,12 +86,21 @@
  	 	</div>
  	 	</div>
  	 </div>
- 	 <div class="B-H4 container-fluid px-5 pt-5">
+
+ 	 <div class="B-H4 container-fluid px-5" style="padding-top: 5rem">
  	 	<div class="row" style="border-bottom: 1px solid #bbb;">
  	 		<div class="col-3" style="font-size:20px; border-bottom: 2px solid #fe7900;color: #fe7900;line-height: 2rem; justify-content: center;">
  	 			<span><i class="fas fa-comments"></i></span>  COMMENT
  	 		</div>
  	 	</div>
+    <div class="row">
+       <div class="form-inline my-5 mx-auto">
+          <input class="form-control" id="score_input" type="text-area" placeholder="Write Your Score Here" style="width:50vw"></input>
+          <div class="ml-3" style="align-self: flex-end; ">
+            <button class="btn " id="score_submit" style="background-color:#fe7900 " data-id="{{movie.id}}">Submit</button>
+          </div>
+        </div >
+    </div>
  	 	<div class="row">
  	 		 <div class="form-inline my-5 mx-auto">
    				<textarea class="form-control" id="comment_input" type="text-area" rows="4" placeholder="Write Your Comments Here" style="width:50vw"></textarea>
@@ -166,7 +172,7 @@
           '/project/comment/submit',
             {
               "mid":m_id,
-              "content":content 
+              "content":content
             },
             function(data){
               
@@ -190,6 +196,32 @@
                   </div>`
                   );
               }else{
+                $('#result-info').html(
+                  '<div class="alert alert-warning" role="alert">'+data.message+'</div>'
+                  );
+              }
+            },
+            "json"
+          );
+            
+      });
+
+      $('#score_submit').on('click', function(){
+        var m_id=$(this).data('id');
+        var score=$('#score_input').val();
+        $.post(
+          '/project/comment/score',
+            {
+              "mid":m_id,
+              "score":score
+            },
+            function(data){
+              
+              if(data.code==200){
+                $('#result-info').html(
+                  '<div class="alert alert-success" role="alert">'+data.message+'</div>'
+                  );
+                }else{
                 $('#result-info').html(
                   '<div class="alert alert-warning" role="alert">'+data.message+'</div>'
                   );
